@@ -1,0 +1,22 @@
+--cpu Cortex-M3
+"ckyf_1.3\startup_stm32f103xb.o"
+"ckyf_1.3\main.o"
+"ckyf_1.3\gpio.o"
+"ckyf_1.3\stm32f1xx_it.o"
+"ckyf_1.3\stm32f1xx_hal_msp.o"
+"ckyf_1.3\stm32f1xx_hal_gpio_ex.o"
+"ckyf_1.3\stm32f1xx_hal.o"
+"ckyf_1.3\stm32f1xx_hal_rcc.o"
+"ckyf_1.3\stm32f1xx_hal_rcc_ex.o"
+"ckyf_1.3\stm32f1xx_hal_gpio.o"
+"ckyf_1.3\stm32f1xx_hal_dma.o"
+"ckyf_1.3\stm32f1xx_hal_cortex.o"
+"ckyf_1.3\stm32f1xx_hal_pwr.o"
+"ckyf_1.3\stm32f1xx_hal_flash.o"
+"ckyf_1.3\stm32f1xx_hal_flash_ex.o"
+"ckyf_1.3\stm32f1xx_hal_exti.o"
+"ckyf_1.3\system_stm32f1xx.o"
+--strict --scatter "ckyf_1.3\ckyf_1_3.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "ckyf_1_3.map" -o ckyf_1.3\ckyf_1_3.axf
